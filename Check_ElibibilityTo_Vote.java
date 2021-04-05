@@ -9,7 +9,7 @@ public class Check_ElibibilityTo_Vote {
         if (age >= 18 && age <110 ) {
             System.out.println("You are eligible to vote");
         }
-        else if (age >110){
+        else if (age >115){
             System.out.println("You're dead. Damn!!!! You're a ghost");
 
         }

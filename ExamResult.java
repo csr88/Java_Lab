@@ -20,12 +20,10 @@ public class ExamResult {
             System.out.println("You passed with C Grade.");
         } else if (marks >= 40 && marks < 50) {
             System.out.println("You passed with D Grade.");
-        }else if (marks <40){
+        }else
             System.out.println("You failed the exam.");
-        }
-        else {
-            System.out.println("Invalid Input");
         }
 
     }
-}
+
+
