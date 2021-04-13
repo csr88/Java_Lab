@@ -26,14 +26,13 @@ public class ATMV2 {
                         } else {
                             System.out.println("Insufficient Balance");
                         }
-                        System.out.println("");
                         break;
 
                     case 2:
                         System.out.print("Enter money to be deposited:");
                         deposit = sc.nextInt();
                         balance = balance + deposit;
-                        System.out.println("Rs " + deposit + " been successfully depsited");
+                        System.out.println("Rs " + deposit + " has been successfully deposited");
                         System.out.println("You current balance is " + balance);
                         break;
 
@@ -49,6 +48,9 @@ public class ATMV2 {
                 System.out.println("\nDo you want to continue?(y/n)");
                 ex = sc.next().charAt(0);
             } while (ex == 'y');
+        }
+        else{
+            System.out.println("Invalid Pin.");
         }
     }
 }

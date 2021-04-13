@@ -7,26 +7,33 @@ public class For_FindEvenOddSumMean_JavaLab {
         int max = sc.nextInt();
         int num = 0, evensum = 0, oddsum = 0, evencount = 0, oddcount = 0;
 
-        System.out.println("\nEven Numbers between 0 and " + max + " are: ");
-        for (int i = 0; i == max; i++) {
-            if (i % 2 == 0) {
-                System.out.print(i + ",");
+        System.out.print("\nEven numbers are :");
+        for(int i=0; i<=max; i++){
+            num=i%2;
+            if(num==0){
+                System.out.println(i);
                 evensum += i;
-                evencount += 1;
-            }
-        }
+                evencount++;
 
-        System.out.println("\nOdd Numbers between 0 and " + max + " are: ");
-        for (int j = 0; j == max; j++) {
-            if (j % 2 != 0) {
-                System.out.print(j + ",");
-                oddsum += j;
-                oddcount += 1;
-            }
-        }
+        }}
+        System.out.print("\nOdd numbers are :");
+
+        for(int i=0; i<=max; i++){
+            num=i%2;
+            if(num==1){
+                System.out.println(i);
+                oddsum+=i;
+                oddcount++;
+        }}
 
         System.out.println("\nThere are " + evencount + " even numbers");
-        System.out.println("\nThere are " + oddcount + " odd numbers");
+        System.out.println("There are " + oddcount + " odd numbers");
+
+        System.out.println("\nThe sum of Even number is "+evensum);
+        System.out.println("The sum of Odd numbers is " +oddsum);
+
+        System.out.println("\nMean of Even numbers= " + (evensum/evencount));
+        System.out.println("Mean of Odd numbers= " + (oddsum/oddcount));
 
     }
 }
